@@ -1,0 +1,14 @@
+aws:
+  secretsmanager:
+    prefix: /secret
+    defaultContext: application
+    profileSeparator: _
+    failFast: true
+    name: backend
+    enabled: true
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: ap-south-1
